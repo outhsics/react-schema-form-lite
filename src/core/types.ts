@@ -75,4 +75,6 @@ export interface WidgetProps {
     disabled?: boolean;
     /** 错误信息 */
     error?: any;
+    /** 透传的组件属性 */
+    props?: any;
 }
