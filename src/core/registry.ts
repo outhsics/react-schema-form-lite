@@ -1,5 +1,5 @@
 import React from 'react';
-import { WidgetProps } from './types';
+import type { WidgetProps } from './types';
 
 // 定义 Widget 组件类型
 export type WidgetComponent = React.ComponentType<WidgetProps>;

@@ -1,4 +1,4 @@
-![React Schema Form Lite Banner](src/assets/banner.png)
+![React Schema Form Lite Banner ](src/assets/banner.png)
 
 # React Schema Form Lite (轻量级动态表单引擎)
 
