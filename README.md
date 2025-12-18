@@ -1,4 +1,4 @@
-![React Schema Form Lite Banner](/Brain/a12122ff-d6fd-44a1-a72d-8da08cc6748c/project_banner_1766062457867.png)
+![React Schema Form Lite Banner](src/assets/banner.png)
 
 # React Schema Form Lite (轻量级动态表单引擎)
 

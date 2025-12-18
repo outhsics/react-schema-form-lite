@@ -1,4 +1,4 @@
-import { Rule } from 'react-hook-form';
+
 
 /**
  * 字段依赖配置
