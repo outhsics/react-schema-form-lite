@@ -28,12 +28,58 @@
 ### 3. 表单校验
 内置必填、正则等多种校验规则，实时反馈错误信息。
 
-## 🛠️ 快速开始
+## 🌍 在线演示 (Live Demo)
 
-### 1. 安装项目
+🚀 **[点击访问在线预览项目](https://react-schema-form-lite.vercel.app)**
+
+---
+
+## 📦 安装 (Installation)
+
+如果您想在自己的项目中使用这个引擎，直接通过 NPM 安装：
 
 ```bash
-git clone https://github.com/your-username/react-schema-form-lite.git
+npm install react-schema-form-lite
+```
+
+*(注意：请确保您的项目中已安装 `react`, `react-dom` 和 `antd`)*
+
+## 🚀 基础用法 (Usage)
+
+```tsx
+import { SchemaForm, registerWidgets } from 'react-schema-form-lite';
+import 'antd/dist/reset.css'; // 别忘了引入 AntD 样式
+
+// 1. 初始化内置组件 (或者自行注册)
+registerWidgets();
+
+const mySchema = [
+  { type: 'input', name: 'user', label: '用户名', rules: { required: '必填' } },
+  { type: 'switch', name: 'isAdmin', label: '是否为管理员' }
+];
+
+function App() {
+  const handleSubmit = (data) => console.log('提交结果:', data);
+
+  return (
+    <SchemaForm 
+      schema={mySchema} 
+      onSubmit={handleSubmit} 
+    />
+  );
+}
+```
+
+---
+
+## 🛠️ 本地开发 (Quick Start for Dev)
+
+如果您想参与本项目开发或运行 Demo 源码：
+
+### 1. 克隆并安装
+
+```bash
+git clone https://github.com/outhsics/react-schema-form-lite.git
 cd react-schema-form-lite
 npm install
 ```
@@ -44,6 +90,12 @@ npm install
 npm run dev
 ```
 打开浏览器访问 `http://localhost:5173` 即可看到演示页面。
+
+### 3. 构建库文件 (构建 NPM 包)
+
+```bash
+npm run build:lib
+```
 
 ## 📦 项目结构
 
