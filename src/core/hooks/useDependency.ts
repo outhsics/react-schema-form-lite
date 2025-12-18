@@ -1,5 +1,5 @@
 import { useWatch, useFormContext } from 'react-hook-form';
-import { FieldSchema } from '../types';
+import type { FieldSchema } from '../types';
 
 /**
  * 联动 Hook：判断字段是否应该显示

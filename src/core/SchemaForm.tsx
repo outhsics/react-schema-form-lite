@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useForm, FormProvider } from 'react-hook-form';
-import { FieldSchema } from './types';
+import type { FieldSchema } from './types';
 import { SchemaItem } from './SchemaItem';
 
 interface SchemaFormProps {

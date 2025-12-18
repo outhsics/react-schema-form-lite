@@ -1,6 +1,6 @@
 import React from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
-import { FieldSchema } from './types';
+import type { FieldSchema } from './types';
 import registry from './registry';
 import { useDependency } from './hooks/useDependency';
 
