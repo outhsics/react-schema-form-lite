@@ -13,11 +13,11 @@ interface SchemaFormProps {
 export const SchemaForm: React.FC<SchemaFormProps> = ({
     schema,
     onSubmit,
-    defaultValues = {},
+    defaultValues,
     className = ""
 }) => {
     const methods = useForm({
-        defaultValues,
+        defaultValues: defaultValues || {},
         mode: 'onChange' // 实时校验
     });
 
