@@ -1,11 +1,11 @@
 import React from 'react';
-import { Input, Select, InputNumber, Switch, Radio, Checkbox } from 'antd';
+import { Input, Select, InputNumber, Switch, Radio } from 'antd';
 import type { WidgetProps } from '../core/types';
 import registry from '../core/registry';
 
 // --- 组件实现 ---
 
-export const InputWidget: React.FC<WidgetProps> = ({ value, onChange, schema, disabled, props }) => {
+export const InputWidget: React.FC<WidgetProps> = ({ value, onChange, disabled, props }) => {
     return (
         <Input
             value={value}
@@ -17,7 +17,7 @@ export const InputWidget: React.FC<WidgetProps> = ({ value, onChange, schema, di
     );
 };
 
-export const SelectWidget: React.FC<WidgetProps> = ({ value, onChange, schema, disabled, props }) => {
+export const SelectWidget: React.FC<WidgetProps> = ({ value, onChange, disabled, props }) => {
     return (
         <Select
             value={value}
@@ -31,7 +31,7 @@ export const SelectWidget: React.FC<WidgetProps> = ({ value, onChange, schema, d
     );
 };
 
-export const NumberWidget: React.FC<WidgetProps> = ({ value, onChange, schema, disabled, props }) => {
+export const NumberWidget: React.FC<WidgetProps> = ({ value, onChange, disabled, props }) => {
     return (
         <InputNumber
             value={value}
@@ -43,7 +43,7 @@ export const NumberWidget: React.FC<WidgetProps> = ({ value, onChange, schema, d
     );
 };
 
-export const SwitchWidget: React.FC<WidgetProps> = ({ value, onChange, schema, disabled, props }) => {
+export const SwitchWidget: React.FC<WidgetProps> = ({ value, onChange, disabled, props }) => {
     return (
         <Switch
             checked={value}
@@ -54,7 +54,7 @@ export const SwitchWidget: React.FC<WidgetProps> = ({ value, onChange, schema, d
     );
 };
 
-export const RadioWidget: React.FC<WidgetProps> = ({ value, onChange, schema, disabled, props }) => {
+export const RadioWidget: React.FC<WidgetProps> = ({ value, onChange, disabled, props }) => {
     return (
         <Radio.Group
             value={value}

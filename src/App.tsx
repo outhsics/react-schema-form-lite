@@ -1,7 +1,7 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { SchemaForm } from './core/SchemaForm';
 import { registerWidgets } from './components/widgets';
-import { ConfigProvider, Card, Alert, Button, message } from 'antd';
+import { ConfigProvider, Alert, Button, message } from 'antd';
 import type { FieldSchema } from './core/types';
 
 // 注册所有组件
