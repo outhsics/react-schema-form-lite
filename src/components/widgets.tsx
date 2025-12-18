@@ -1,6 +1,6 @@
 import React from 'react';
 import { Input, Select, InputNumber, Switch, Radio, Checkbox } from 'antd';
-import { WidgetProps } from '../core/types';
+import type { WidgetProps } from '../core/types';
 import registry from '../core/registry';
 
 // --- 组件实现 ---
