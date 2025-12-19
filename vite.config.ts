@@ -5,7 +5,8 @@ import { resolve } from 'path'
 
 // https://vite.dev/config/
 export default defineConfig(() => {
-  const isLib = process.env.LIB === 'true';
+  // 更加鲁棒的变量获取方式
+  const isLib = String(process.env.LIB) === 'true';
 
   return {
     plugins: [
