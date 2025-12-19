@@ -4,7 +4,7 @@ import dts from 'vite-plugin-dts'
 import { resolve } from 'path'
 
 // https://vite.dev/config/
-export default defineConfig(({ mode }) => {
+export default defineConfig(() => {
   const isLib = process.env.LIB === 'true';
 
   return {
