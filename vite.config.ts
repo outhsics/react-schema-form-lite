@@ -4,9 +4,8 @@ import dts from 'vite-plugin-dts'
 import { resolve } from 'path'
 
 // https://vite.dev/config/
-export default defineConfig(() => {
-  // 更加鲁棒的变量获取方式
-  const isLib = String(process.env.LIB) === 'true';
+export default defineConfig(({ mode }) => {
+  const isLib = mode === 'lib';
 
   return {
     plugins: [
@@ -35,6 +34,7 @@ export default defineConfig(() => {
       },
     } : {
       outDir: 'dist',
+      sourcemap: true,
     },
   };
 })
