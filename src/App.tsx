@@ -110,8 +110,8 @@ function App() {
     <ConfigProvider>
       <div className="min-h-screen bg-gray-100 flex flex-col font-sans">
         {/* Header */}
-        <header className="bg-white shadow-sm p-4 z-10">
-          <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <header className="bg-white shadow-sm px-6 py-4 z-10">
+          <div className="max-w-none mx-auto flex justify-between items-center">
             <h1 className="text-xl font-bold text-gray-800 flex items-center gap-2">
               🚀 React Schema Form Lite
               <span className="text-xs font-normal px-2 py-0.5 bg-blue-100 text-blue-800 rounded-full">v1.0.0</span>
@@ -130,7 +130,7 @@ function App() {
         </header>
 
         {/* Main Content */}
-        <main className="flex-1 max-w-7xl w-full mx-auto p-4 grid grid-cols-1 lg:grid-cols-2 gap-6 h-[calc(100vh-80px)]">
+        <main className="flex-1 max-w-none w-full mx-auto px-6 py-4 grid grid-cols-1 lg:grid-cols-2 gap-6 h-[calc(100vh-80px)]">
 
           {/* Left: Editor */}
           <div className="flex flex-col h-full bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200">
