@@ -4,6 +4,15 @@
 
 **零代码、元数据驱动的 React 表单引擎 —— 专为学习与轻量级场景打造。**
 
+## Recruiter Snapshot
+
+- Status: `active`
+- Positioning: schema-driven frontend infrastructure for dynamic form rendering
+- Core Value: turn backend JSON schemas into maintainable, high-performance React forms
+- Stack: React, TypeScript, Ant Design, react-hook-form
+- Delivery Signal: reusable architecture patterns (registry, dependency hooks, recursive rendering)
+- Last Reviewed: `2026-03-02`
+
 > 🎯 **核心目标**：通过本项目，带你深入理解 **元数据驱动 (Metadata Driven)**、**组件注册模式 (Registry Pattern)** 以及 **递归渲染** 等高级前端开发概念。
 
 ## ✨ 核心特性
